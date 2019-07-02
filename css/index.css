@@ -1,0 +1,445 @@
+/* 头部样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.f1{
+    float: left;
+}
+.fr{
+    float: left;
+}
+.main {
+    width: 1226px;
+    margin: 0 auto;
+}
+.img{
+    vertical-align: top;
+}
+.header {
+    background: #333;
+}
+
+.header .nav {
+    float: left;
+}
+
+.header .nav li,
+.header .login li{
+    float: left;
+    line-height: 40px;
+}
+ul li{
+    list-style: none;
+}
+.header .nav li a,
+.header .login li a {
+    line-height: 12px;
+    font-size: 14px;
+    display: block;
+    color: #b0b0b0;
+    padding: 0 10px;
+    margin: 14px 0;
+    border-right: 1px solid #b0b0b0;
+}
+a{
+    text-decoration: none;
+}
+.header .nav li a:hover,
+.header .login li a:hover {
+    color: #fff;
+}
+
+.header .nav li:last-child a,.header .login li:last-child {
+    border-right: none;
+}
+
+.header .login {
+    float: right;
+}
+
+.header .login li {
+    float: left;
+}
+
+.header .buyCar {
+    float: right;
+    position: relative;
+    padding: 0 15px;
+}
+
+.header .buyCar .detail{
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    width: 300px;
+    line-height: 100px;
+    background: white;
+    box-shadow: 0 1px 1px #000;
+    text-align: center;
+    display: none;
+}
+.header .buyCar:hover{
+    background: white;
+}
+.bannerImg li Img{
+    vertical-align: top;
+}
+.bannerImg li{
+    float: left;
+    width: 50%;
+}
+.bannerImg li Img{
+    width: 100%;
+}
+
+
+.header .buyCar>span {
+    display: block;
+    line-height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+    padding-left: 20px;
+    background: url(../img/xiaomi.png)no-repeat left center;
+    background-size: 18px;
+}
+
+.header .buyCar:hover>span {
+    color: #f1671b;
+    background-image: url(../img/gwc.jpg)
+}
+.header .nav li a:hover,
+.header .login li a:hover{
+    color: white;
+}
+
+header h1 {
+    width: 55px;
+    height: 55px;
+    background: #ff6700 url(../img/xiaomi.png) no-repeat center;
+    background-size: 40px;
+    margin-right: 150px;
+
+  
+}
+
+header h1 a {
+    display: block;
+    height: 55px;
+    text-indent: -9999px;
+}
+
+header .headerBottom {
+    margin-top: 22px;
+}
+
+header .nav {}
+
+header .nav li {
+    float: left;
+    line-height: 55px;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.banner{
+    overflow: hidden;
+    position: relative;
+    margin-top: 22px;
+}
+
+.bannerLeft{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background: #333;
+}
+.bannerLeft li{
+    line-height: 50px;
+    padding-left: 20px;
+}
+.bannerLeft li:hover{
+    background: orange;
+}
+.bannerLeft li a{
+    color: #fff;
+    text-decoration: none;
+}
+.banner .bannerImg{
+    width: 500%;
+    list-style: none;
+}
+.banner .bannerImg li{
+    float: left;
+    width: 20%;
+}
+.banner .bannerImg li img{
+    width: 100%;
+}
+
+.banner .bannerDot{
+    position: absolute;
+    right: 20px;
+    top: 420px;
+}
+.banner .bannerDot li{
+    width: 5px;
+    height: 2px;
+    border: 2px solid #333;
+    background: #ccc;
+    border-radius: 50%;
+    float: left;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.banner .bannerDot li:hover{
+    background: #fff;
+}
+.banner .bannerLeft{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+.banner .bannerLeft li{}
+.banner .bannerLeft li>span{
+    display: block;
+    line-height: 42px;
+    cursor: pointer;
+    padding: 0 150px 0 20px;
+}
+.banner .bannerLeft li>span::after{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #ccc;
+    border-color: #ccc #ccc transparent transparent;
+    transform:rotate(45deg);
+
+}
+.banner .bannerLeft li>div{
+    width: 300px;
+    height: 460px;
+    line-height: 460px;
+    position: absolute;
+    left: 236px;
+    top: 0;
+    background: #fff;
+    text-align: center;
+    font-size: 50px;
+    color: #000;
+    display: none;
+}
+.banner .bannerLeft li:hover>div{
+    display: block;
+}
+
+.banner .bannerLeft li:hover span{
+    background-color: #ff6700;
+}
+
+
+.cont{}
+.cont h3{
+    line-height: 50px;
+    font-weight: normal;
+    font-size: 25px;
+}
+.cont h3 a{
+    text-decoration: none;
+    float: right;
+    color: #333;
+    font-size: 12px;
+    position: relative;
+    padding-right: 25px;
+}
+.cont h3 a::after{
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border: 2px solid red;
+    border-color: red red transparent transparent;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: rotate(45deg)  translateY(-50%);
+}
+.cont h3 a::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: pink;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cont .contLeft{
+    float: left;
+    width: 234px;
+}
+.cont .contRight{
+    float: left;
+    width: 992px;
+    background: #ccc;
+}
+.cont .contRight li{
+    width: 23%;
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 10px;
+    background: #fff;
+    position: relative;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.cont .contRight li a>span{
+    padding: 2px 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: green;
+    color: #fff;
+}
+.cont .contRight li img{
+    width: 160px;
+    margin-top: 20px;
+}
+.cont .contRight li h4{
+    font-weight: normal;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cont .contRight li p{
+    color: #999;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cont .contRight li p.price{
+ line-height: 56px;
+}
+
+.cont .contRight li p.price .nowPrice{
+    color: red;
+}
+.cont .contRight li p.price .oldPrice{
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.cont .contRight li:nth-child(5),
+.cont .contRight li:nth-child(6),
+.cont .contRight li:nth-child(7),
+.cont .contRight li:nth-child(8){
+    margin-bottom: 0;
+}
+.cont .contRight li:hover{
+    box-shadow: 0 0 10px 4px #ccc;
+    transform: translateY(-3px);
+}
+.foot .list{
+    height: 60px;
+    margin: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.foot .list li{
+    float: left;
+}
+.foot .list li a{
+    display: block;
+    padding: 0 65px;
+    margin: 14px 0;
+    font-size: 16px;
+    color: #616161;
+    text-align: center;
+    text-decoration-line: none;
+    border-left: 1px solid #ccc;
+    position: relative;
+}
+.foot .list li a:hover{
+    color: #ff6700;
+}
+.foot .service{
+    display: block;
+    float: left;
+    width: 1226px;
+    height: 112px;
+    margin: 20px;
+}
+.foot .service dl{
+    display: block;
+    float: left;
+    padding: 0 40px;
+    margin: 14px 0;
+}
+.foot .service dt{
+    display: block;
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.foot .service dd{
+    display: block;
+    margin: 10px 0 0;
+    font-size: 12px;
+    cursor: pointer;
+    color: #999;
+}
+.foot .service dd:hover{
+    color: #ff6700;
+}
+.foot .contact{
+    display: block;
+    right: 152px;
+    width: 250px;
+    height: 110px;
+    margin: 20px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+    position: absolute;
+}
+.foot .contact .phone{
+    right: 0;
+    margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+.foot .contact p{
+    margin: 0 0 16px;
+    font-size: 12px;
+}
+.foot .contact a{
+    display: inline-block;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    padding: 8px 5px 0;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.foot .contact a:hover{
+    background: #ff6700;
+    color: #fff;
+}
